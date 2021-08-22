@@ -6,6 +6,7 @@ module.exports = {
         'bundle-top': './src/main-top.tsx',
         'bundle-middle': './src/main-middle.tsx',
         'bundle-right': './src/main-right.tsx',
+        'bundle-controller': './src/main-controller.tsx',
     },
     module: {
         rules: [

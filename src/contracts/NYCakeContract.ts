@@ -25,6 +25,11 @@ class NYCakeContract extends ERC20Contract<ERC20> {
     ]> {
         return await this.contract.getAccountDividendsInfo(account);
     }
+
+    public async claim() {
+        const contract = await this.loadWalletContract();
+        await contract?.claim();
+    }
 }
 
 export default new NYCakeContract();

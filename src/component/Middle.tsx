@@ -1,4 +1,4 @@
-import { BigNumber, ethers, utils } from "ethers";
+import { BigNumber, utils } from "ethers";
 import { Component } from "react";
 import Wallet from "../bsc/Wallet";
 import NYCakeContract from "../contracts/NYCakeContract";
@@ -20,6 +20,7 @@ export default class Middle extends Component<{}, {
             value: BigNumber.from(0),
             totalDistributedCakeRewards: BigNumber.from(0),
         };
+        Wallet.on("connect", () => this.componentDidMount());
     }
 
     public async componentDidMount() {

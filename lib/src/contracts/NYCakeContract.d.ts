@@ -16,6 +16,7 @@ declare class NYCakeContract extends ERC20Contract<ERC20> {
         BigNumber,
         BigNumber
     ]>;
+    claim(): Promise<void>;
 }
 declare const _default: NYCakeContract;
 export default _default;
