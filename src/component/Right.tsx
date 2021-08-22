@@ -37,6 +37,9 @@ export default class Right extends Component<{}, {
             const nycakePrices = await PriceCalculatorContract.valueOfAsset("0xA14eBc2cbe4B2f87B0F1aEC4bCa6e410790D8709", nycake);
             this.setState({ lpValue: wbnbPrices[1].add(nycakePrices[1]) });
         })();
+        (async () => {
+            this.setState({ holders: await NYCakeContract.getNumberOfDividendTokenHolders() });
+        });
     }
 
     public render() {
@@ -53,10 +56,10 @@ export default class Right extends Component<{}, {
                 LP value<br />
                 <b>${Utils.numberWithCommas(utils.formatEther(this.state.lpValue))}</b>
             </div>
-            {/*<div>
+            {<div>
                 Holders<br />
                 <b>{Utils.numberWithCommas(String(this.state.holders))}</b>
-            </div>*/}
+            </div>}
         </main>;
     }
 }
