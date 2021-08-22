@@ -4,6 +4,7 @@ export type { DividendPayingTokenOptionalInterface } from "./DividendPayingToken
 export type { ERC20 } from "./ERC20";
 export type { IERC20 } from "./IERC20";
 export type { IERC20Metadata } from "./IERC20Metadata";
+export type { IPriceCalculator } from "./IPriceCalculator";
 export type { IUniswapV2Factory } from "./IUniswapV2Factory";
 export type { IUniswapV2Pair } from "./IUniswapV2Pair";
 export type { IUniswapV2Router01 } from "./IUniswapV2Router01";
@@ -18,6 +19,7 @@ export { DividendPayingTokenOptionalInterface__factory } from "./factories/Divid
 export { ERC20__factory } from "./factories/ERC20__factory";
 export { IERC20__factory } from "./factories/IERC20__factory";
 export { IERC20Metadata__factory } from "./factories/IERC20Metadata__factory";
+export { IPriceCalculator__factory } from "./factories/IPriceCalculator__factory";
 export { IUniswapV2Factory__factory } from "./factories/IUniswapV2Factory__factory";
 export { IUniswapV2Pair__factory } from "./factories/IUniswapV2Pair__factory";
 export { IUniswapV2Router01__factory } from "./factories/IUniswapV2Router01__factory";

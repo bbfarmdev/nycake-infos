@@ -610,6 +610,40 @@
       "artifacts": [
         "IERC20Metadata"
       ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IPriceCalculator.sol": {
+      "lastModificationDate": 1629614672018,
+      "contentHash": "d5343226989f2f7d4b9198cbd280eb87",
+      "sourceName": "contracts/IPriceCalculator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IPriceCalculator"
+      ]
     }
   }
 }
