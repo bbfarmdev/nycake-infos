@@ -1,0 +1,615 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\Context.sol": {
+      "lastModificationDate": 1629601896101,
+      "contentHash": "e87db9176f9ce18e3868e71aa8d7efbf",
+      "sourceName": "contracts/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\Ownable.sol": {
+      "lastModificationDate": 1629601896111,
+      "contentHash": "86b56355b952e25756854e3030b970c0",
+      "sourceName": "contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\NYCTransferHelper.sol": {
+      "lastModificationDate": 1629601896110,
+      "contentHash": "4c1992070a0594b849d4f27471ad23a2",
+      "sourceName": "contracts/NYCTransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol",
+        "./IERC20.sol",
+        "./IUniswapV2Router.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "NYCTransferHelper"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IERC20.sol": {
+      "lastModificationDate": 1629601896105,
+      "contentHash": "e5feeadd2b04513b14408efa71810b3f",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IUniswapV2Router.sol": {
+      "lastModificationDate": 1629601896108,
+      "contentHash": "ebcbd5b4b3fc5e524e953681f2d0c15d",
+      "sourceName": "contracts/IUniswapV2Router.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01",
+        "IUniswapV2Router02"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\NYCAKE.sol": {
+      "lastModificationDate": 1629601896110,
+      "contentHash": "f9289ff5760d80a4f4555a227161d348",
+      "sourceName": "contracts/NYCAKE.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DividendPayingToken.sol",
+        "./SafeMath.sol",
+        "./IterableMapping.sol",
+        "./Ownable.sol",
+        "./IUniswapV2Pair.sol",
+        "./IUniswapV2Factory.sol",
+        "./IUniswapV2Router.sol",
+        "./NYCTransferHelper.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "NYCAKE",
+        "NYCAKEDividendTracker"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\DividendPayingToken.sol": {
+      "lastModificationDate": 1629601896102,
+      "contentHash": "af719367473aaf8fa349e3467c2b44b1",
+      "sourceName": "contracts/DividendPayingToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "./SafeMath.sol",
+        "./SafeMathUint.sol",
+        "./SafeMathInt.sol",
+        "./DividendPayingTokenInterface.sol",
+        "./DividendPayingTokenOptionalInterface.sol",
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "DividendPayingToken"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\SafeMath.sol": {
+      "lastModificationDate": 1629601896112,
+      "contentHash": "ec0ecdc3811332bac7fbf67385b2431a",
+      "sourceName": "contracts/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IterableMapping.sol": {
+      "lastModificationDate": 1629601896109,
+      "contentHash": "21e4b76aa0985a528d33b1199e5b742a",
+      "sourceName": "contracts/IterableMapping.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IterableMapping"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IUniswapV2Pair.sol": {
+      "lastModificationDate": 1629601896107,
+      "contentHash": "152754d2084ca4c15a07d2cab866ba34",
+      "sourceName": "contracts/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IUniswapV2Factory.sol": {
+      "lastModificationDate": 1629601896106,
+      "contentHash": "60ad3655a0ecf885908f9b6627c4d1e0",
+      "sourceName": "contracts/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\ERC20.sol": {
+      "lastModificationDate": 1629601896104,
+      "contentHash": "703fbd94da97bfe4328fc043c5ce3785",
+      "sourceName": "contracts/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC20Metadata.sol",
+        "./Context.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\SafeMathUint.sol": {
+      "lastModificationDate": 1629601896114,
+      "contentHash": "145d1e48de5fbcaa8302ebd2ae066011",
+      "sourceName": "contracts/SafeMathUint.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "SafeMathUint"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\SafeMathInt.sol": {
+      "lastModificationDate": 1629601896113,
+      "contentHash": "21ecd78fc408bacff620e301e169ee99",
+      "sourceName": "contracts/SafeMathInt.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "SafeMathInt"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\DividendPayingTokenInterface.sol": {
+      "lastModificationDate": 1629601896103,
+      "contentHash": "e8b128c6dc81f9db95cab58ed82861f4",
+      "sourceName": "contracts/DividendPayingTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "DividendPayingTokenInterface"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\DividendPayingTokenOptionalInterface.sol": {
+      "lastModificationDate": 1629601896104,
+      "contentHash": "8729cae7195cf3aec6f6a5c041dfba6f",
+      "sourceName": "contracts/DividendPayingTokenOptionalInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "DividendPayingTokenOptionalInterface"
+      ]
+    },
+    "C:\\Users\\YJ\\Documents\\GitHub\\nycake-infos\\contracts\\IERC20Metadata.sol": {
+      "lastModificationDate": 1629601896106,
+      "contentHash": "fc45712904368a923540b7cc19c914e3",
+      "sourceName": "contracts/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    }
+  }
+}
