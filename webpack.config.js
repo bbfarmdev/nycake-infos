@@ -3,6 +3,7 @@ const { ProvidePlugin } = require('webpack');
 
 module.exports = {
     entry: {
+        'bundle': './src/main.tsx',
         'bundle-top': './src/main-top.tsx',
         'bundle-middle': './src/main-middle.tsx',
         'bundle-right': './src/main-right.tsx',
