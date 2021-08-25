@@ -6,7 +6,7 @@ import { ERC20 } from "./typechain";
 class NYCakeContract extends ERC20Contract<ERC20> {
 
     constructor() {
-        super("0xA14eBc2cbe4B2f87B0F1aEC4bCa6e410790D8709", NYCAKEArtifact.abi, []);
+        super("0x3d6f31679c13b767c7d029efd33fc5f19da40224", NYCAKEArtifact.abi, []);
     }
 
     public async getClaimWait(): Promise<BigNumber> { return await this.contract.getClaimWait(); }
