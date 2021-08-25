@@ -1,8 +1,5 @@
-import { BigNumber, utils } from "ethers";
 import { Component } from "react";
-import NYCakeContract from "../contracts/NYCakeContract";
-import PriceCalculatorContract from "../contracts/PriceCalculatorContract";
-import Utils from "../Utils";
+import { Timeline } from "react-twitter-widgets";
 
 export default class Main extends Component<{}, {
 }> {
@@ -18,8 +15,15 @@ export default class Main extends Component<{}, {
 
     public render() {
         return <main>
-            <a className="twitter-timeline" href="https://twitter.com/NYCAKE_BSC?ref_src=twsrc%5Etfw">Tweets by NYCAKE_BSC</a>
-            <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
+            <Timeline
+                dataSource={{
+                    sourceType: "profile",
+                    screenName: "NYCAKE_BSC"
+                }}
+                options={{
+                    height: "600"
+                }}
+            />
         </main>;
     }
 }
