@@ -64,6 +64,15 @@ class Wallet extends EventContainer {
         this.checkConnected();
     }
 
+    public async forceConnect() {
+        await this.ethereum.request({
+            method: "wallet_requestPermissions", params: [{
+                eth_accounts: {},
+            }],
+        });
+        this.checkConnected();
+    }
+
     public async changeNetwork(
         chainId: number,
         chainName: string,

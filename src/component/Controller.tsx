@@ -9,7 +9,7 @@ export default class Controller extends Component {
     };
 
     private connect = () => {
-        Wallet.connect();
+        Wallet.forceConnect();
     };
 
     public render() {
