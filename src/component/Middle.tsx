@@ -49,9 +49,6 @@ export default class Middle extends Component<{}, {
             <div>
                 Value: ${Utils.numberWithCommas(utils.formatEther(this.state.value))}
             </div>
-            <div>
-                Total Distributed Cake Rewards: {Utils.numberWithCommas(utils.formatEther(this.state.totalDistributedCakeRewards))}
-            </div>
         </main>;
     }
 }
